@@ -667,7 +667,7 @@ footer .info {
 .formcontent {
   background-color: #181818;
   position: sticky;
-  top: 45px;
+  top: 10rem;
 }
 
 .struct {
@@ -1178,7 +1178,7 @@ footer .info {
   display: none;
   background-color: #181818;
   position: sticky;
-  top: 45px;
+  top: 10rem;
 }
 
 .struct {
