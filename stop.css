@@ -1320,7 +1320,7 @@ footer .info {
     box-shadow: 4px 6px 25px rgb(0 0 0 / 8%);
     border-radius: 0px;
     width: 45vw;
-    height: 40px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1361,7 +1361,7 @@ footer .info {
     width: 100%;
     padding: 0px;
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 9rem;
     background-color: black;
 }
   .formi {
