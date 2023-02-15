@@ -61,6 +61,28 @@
     -moz-box-shadow: 0px 0px 58px 0px rgba(219, 219, 219, 1);
     box-shadow: 0px 0px 58px 0px rgb(219 219 219);
   }
+
+
+  .form_styl {
+    display: flex; 
+    column-gap: 16px; 
+    width:50% !important;
+  }
+  
+  .form_styl_one {
+    width: 50%;
+  }
+  .form_styl_two {
+    width: 50%; 
+  }
+  .form_styl_three {
+    width:30%;
+  }
+  .frm_btn {
+    width:18%;
+  }
+
+
   @keyframes infi {
     from {left: -20px;}
   to {left:150px; }
@@ -1285,6 +1307,9 @@ footer .info {
 
 /* Media query max-width: 600px*/
 @media screen and (max-width: 600px){
+  .container{
+    margin-bottom: 26px;
+  }
   /* Top navbar */
   .topnav {
     background-color: white;
@@ -1361,7 +1386,7 @@ footer .info {
     width: 100%;
     padding: 0px;
     margin: auto;
-    margin-top: 9rem;
+    margin-top: 6rem;
     background-color: black;
 }
   .formi {
@@ -1372,14 +1397,28 @@ footer .info {
     padding-bottom: 1rem;
 }
   .formi>div {
-    width: 70%
+    width: 90%;
 }
+
+.form_styl { 
+  display: flex; 
+  gap: 10px; 
+  justify-content: center;
+}
+
+.form_styl_one {
+  width: 50%;
+}
+.form_styl_two {
+  width: 50% ;
+}
+
 .formi>div:nth-child(4) {
-  width: 27vw;
+  width: 270vw;
   margin-top: 2px;
 }
 .column1{
-  margin-top: 14rem;
+  margin-top: 4rem;
 }
   /* how to setup company in dubai */
 .heading{
