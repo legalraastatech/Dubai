@@ -667,7 +667,7 @@ text-align: right;
 .formcontent {
   background-color: #181818;
   position: sticky;
-  top: 45px;
+  top: 10rem;
 }
 
 .struct {
@@ -1178,7 +1178,7 @@ width: 100%;
   display: none;
   background-color: #181818;
   position: sticky;
-  top: 45px;
+  top: 10rem;
 }
 
 .struct {
