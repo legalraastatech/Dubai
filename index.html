@@ -29,7 +29,8 @@
     </div>
 
 
-
+    <form name="RegForm" onsubmit="return proceed()" method="post">
+             
     <div class="container2 container_two">
         <div class="rib-txt">
             <p>Apply Online</p>
@@ -37,11 +38,11 @@
         <div class="form-container">
             <div class="formi">
                 <div class="form_styl">
-                    <div class="form_styl_one"><input type="text" name="name" id="name" placeholder="Your Name"></div>
-                    <div class="form_styl_two"><input type="email" name="email" id="email" placeholder="Email"></div>
+                    <div class="form_styl_one"><input type="text" name="Name" id="name" placeholder="Your Name" required></div>
+                    <div class="form_styl_two"><input type="email" name="EMail" id="email" placeholder="Email" required></div>
                 </div>
 
-                <div class="form_styl_three"> <input type="tel" name="number" id="number" placeholder="Number"></div>
+                <div class="form_styl_three"> <input type="tel" name="Telephone" id="number" placeholder="Number" required></div>
                 <div class="frm_btn"><button> Proceed</button></div>
             </div>
 
@@ -51,8 +52,9 @@
         </div>
 
 
-
     </div>
+    </form>
+
     <div class="container-fluid">
         <div class="row" id="header">
             <div class="column1">
@@ -204,18 +206,23 @@
 
 
             <div class="column2">
+                <form name="RegForm" onsubmit="return proceed()" method="post">
                 <div class="formcontent">
 
                     <div class="rib-txt tp ">
                         <p class="wid">Apply Online</p>
                     </div>
                     <div class="struct">
-                        <input type="text" name="name" id="name" placeholder="Your name">
-                        <input type="tel" name="tel" id="tel" placeholder="Telephone">
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="text" name="Name" id="name" placeholder="Your name" required>
+                        <input type="tel" name="Telephone" id="tel" placeholder="Telephone" required>
+                        <input type="email" name="EMail" id="email" placeholder="Email" required>
                         <button>Proceed</button>
                     </div>
                 </div>
+                </form>
+
+
+
             </div>
         </div>
     </div>
@@ -385,6 +392,49 @@
 
 
     </script>
+
+
+<script>
+
+function proceed() {
+                var name =
+                    document.forms.RegForm.Name.value;
+                var email =
+                    document.forms.RegForm.EMail.value;
+                var phone =
+                    document.forms.RegForm.Telephone.value;
+            
+                var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+                var regPhone=/^\d{10}$/;                                        // Javascript reGex for Phone Number validation.
+                var regName = /\d+$/g;                                    // Javascript reGex for Name validation
+ 
+                if (name == "" || regName.test(name)) {
+                    window.alert("Please enter your name properly.");
+                    name.focus();
+                    return false;
+                }
+ 
+            
+                 
+                if (email == "" || !regEmail.test(email)) {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+                  
+                
+                if (phone == "" || !regPhone.test(phone)) {
+                    alert("Please enter valid phone number.");
+                    phone.focus();
+                    return false;
+                }
+ 
+                return true;
+            }
+
+</script>
+
+
 
 </body>
 
