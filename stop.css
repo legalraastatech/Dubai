@@ -1,701 +1,109 @@
 * {
-    box-sizing: border-box;
-  }
-  :root {
-    --full-width:100%;  
-  }
-  *::after{
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fee756;
-    
-  }
-  .topnav {
-    overflow: hidden;
-    padding-left: 20px;
-    background: #fee756;
-    padding-right: 20px;
-    margin-top: 10px;
-  }
-  .topnav img {
-    float: left;
-  }
-  
-  .topnav .navchip {
-    float: right;
-    margin-top: 10px;
-    width: 160px;
-    height: 50px;
-    background: #fee765;
-    padding: 12px 12px 12px 0px;
-    border-radius: 20px;
-    position: relative;
-    border: 2px solid rgb(252, 190, 4);
-    ;
-  }
-  .topnav a {
-    float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;    
-  }
-  .navchip::after{
-    position: absolute;
-    content: "";
-    width: 17px;
-    height: 107%;
-    background: rgb(255 255 255 / 25%);
-    animation: infi 1s.6s ease-out infinite;
-    top: 0;
-    left: -20px;
-    animation-delay: 3s;
-    -webkit-box-shadow: 0px 0px 58px 0px rgb(219 219 219);
-    -moz-box-shadow: 0px 0px 58px 0px rgba(219, 219, 219, 1);
-    box-shadow: 0px 0px 58px 0px rgb(219 219 219);
-  }
-
-
-  .form_styl {
-    display: flex; 
-    column-gap: 16px; 
-    width:90% !important;
-  }
-  
-  .form_styl_one {
-    width: 50%;
-  }
-  .form_styl_two {
-    width: 50%; 
-  }
-  .form_styl_three {
-    width:30%;
-  }
-  .frm_btn {
-    width:18%;
-  }
-
-
-  @keyframes infi {
-    from {left: -20px;}
-  to {left:150px; }
-  }
-
-  #demo {
-    height: 150px;
+  box-sizing: border-box;
 }
-  .ullist {
-    color: #fee765;
+:root {
+  --full-width:100%;  
+}
+*::after{
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fee756;
+  
+}
+.topnav {
+  overflow: hidden;
+  padding-left: 20px;
+  background: #fee756;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+.topnav img {
+  float: left;
+}
+
+.topnav .navchip {
+  float: right;
+  margin-top: 10px;
+  width: 160px;
+  height: 50px;
+  background: #fee765;
+  padding: 12px 12px 12px 0px;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid rgb(252, 190, 4);
+  ;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;    
+}
+.navchip::after{
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 107%;
+  background: rgb(255 255 255 / 25%);
+  animation: infi 1s.6s ease-out infinite;
+  top: 0;
+  left: -20px;
+  animation-delay: 3s;
+  -webkit-box-shadow: 0px 0px 58px 0px rgb(219 219 219);
+  -moz-box-shadow: 0px 0px 58px 0px rgba(219, 219, 219, 1);
+  box-shadow: 0px 0px 58px 0px rgb(219 219 219);
+}
+
+
+.form_styl {
+  display: flex; 
+  column-gap: 16px; 
+  width:90% !important;
+}
+
+.form_styl_one {
+  width: 50%;
+}
+.form_styl_two {
+  width: 50%; 
+}
+.form_styl_three {
+  width:30%;
+}
+.frm_btn {
+  width:18%;
+}
+
+
+@keyframes infi {
+  from {left: -20px;}
+to {left:150px; }
+}
+
+#demo {
+  height: 150px;
+}
+.ullist {
+  color: #fee765;
 }
 
 .ullist>li {
-    list-style-type: disc;
-    font-size: 1.3rem;
-}
-
-  #phone{
-    width:25px;
-    height: 25px;
-  }
-
-  /* Testimonial */
-  .testimonial {
-    width: 90%;
-    margin: auto;
-    height: fit-content;
-
-}
-
-.care {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 20px;
-    gap: 2%
-}
-
-.carousel {
-    position: relative;
-    width: 50%
-}
-
-.carousel-inner {
-    display: flex;
-    overflow-x: scroll;
-    border-radius: 4px;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-}
-
-.carousel-inner::-webkit-scrollbar {
-    display: none;
-}
-
-.testitem {
-    width: 60%;
-    border-radius: 10px;
-    border: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-    margin-bottom: 15px;
-    box-shadow: 0px 10px 0px 0px black;
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-
-.content>img {
-    border-radius: 50%;
-    width: 60%;
-    margin: auto;
-    margin-right: 20px;
-    margin-left: 20px;
-    display: block;
-}
-
-.carousel__slide {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.carousel__next,
-.carousel__prev {
-    text-decoration: none;
-    color: black;
-    border-radius: 4px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 800;
-    color: #fff;
-    background-color: orangered;
-}
-
-
-  /* @media screen and (max-width: 600px) {} */
-  .container-fluid{
-    width: 100%;
-    padding: 5px;
-    margin-left: auto;
-    position: relative;
-    top:0px;
-    right: 0px;
-    margin-right: auto;
-    background-color: black;
-    height: fit-content;
-  }
-  .container-fluid::after{
-    position: absolute;
-    content: "";
-    width: 454px;
-    height: var(--full-width);
-    background: url(img.jpg) 0 no-repeat;
-    background-size: cover;
-    right: 0px;
-    top: 0px;
-  }
-  
-  .container-fluid .row{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-  }
-  .container-fluid .row>*{
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-}
-
- .container-fluid .container{
-    padding: 10px;
- }
- #head h3{
-    font-size:2.5rem;
-    font-weight: 800;
-    margin-bottom: 0px;
-    margin-top: 2px;
-    color: #fee765;
- }
- #head h3:nth-child(1){
-  color: #fee765;
- }
- #head h6{
-    font-size: 2vw;
-    font-weight: 400;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    color: #fee765;
- }
- #head p{
-    margin-bottom:10px;
-    margin-top: 8px;
-    font-size: 2vw;
-    font-weight: 500;
- }
- .name>h3{
-    margin-top: 5px;
- }
- .email>h3 , .number>h3{
-    margin-top: 30px;
-    margin-bottom: 20px;
- }
- #name ,#email ,  #number {
-    padding:13px;
-    width: 100%;
-    font-weight: 600;
-    font-size: 15px;
-    border:2px solid #fee765;
-    border-bottom: 1px solid grey;
-     }
- .form{
-    background-color: #fff;
-    border-radius: 15px;
-    border-top: 10px solid #034d82;
-    height: max-content;
- }
- .headline h2{
-    font-size: 20px;
-    position: relative;
-    top: -8px;
-    margin: 0px;
-    padding:4px 3px;
-    text-align: center;
- }
- .formcontent{
-    margin: 0px;
-    padding: 15px 0px;
-   
- }
- .headline{
-    background-color: #034d82;
-    color: #fff;
- }
- button {
-    padding: 13px;
-    font-size: larger;
-    color: white;
-    border:none;
-    border-radius: 10px;
-    background-color:#ff6600;
-    width: 100%;
-  
-  }
-  .container2 {
-    margin-top: 20px;
-    width: 100%;
-    background-color: black;
-    height: 100px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.container_two {
-  position: sticky;
-  z-index: 1;
-  top: 20px;
-  padding: 50px;
-}
-.rib-txt {
-  background-color: black;
-  z-index: -1;
-}
-.container3{
-  margin-top: 20px;
-  width: 100%;
-  background: #fee756;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.container3 h1{
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-}
-.rib-txt {
-    position: absolute;
-    top: -24px;
-    width: 100%;
-}
-
-.rib-txt>p::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 30px solid #8f7100;
-    position: absolute;
-    z-index: -1;
-    top: 1px;
-    right: -20px;
-}
-
-.rib-txt>p {
-    background: #fed437;
-    box-shadow: 4px 6px 25px rgb(0 0 0 / 8%);
-    border-radius: 0 0 50px 50px;
-    width: 45vw;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-weight: 700;
-    position: relative;
-}
-
-.rib-txt>p::after {
-    left: -20px;
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 30px solid #8f7100;
-    position: absolute;
-    z-index: -1;
-    top: 1px;
-}
-
-.form-container {
-    width: 95%;
-    padding: 0px;
-    margin: auto;
-    margin-top: 35px;
-    background-color: black;
-}
-.formi {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-}
-.formi>div {
-    width: 30%
-}
-
-.formi>div:nth-child(4) {
-    width: 20vw;
-}
-
-/* Footer Style Start */
-.container-fluid2 {
-  width: 100%;
-  padding: 0px 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.bg-blue {
-  background: #18233f;
-  color: #fff;
-}
-
-.container1 {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-footer .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-footer .col-md-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-footer .info {
-  margin: 30px 0;
-}
-
-.info p {
-  font-size: 1em;
-  margin: 20px
-}
-
-.info .address {
-  text-align: right;
-}
-/* Footer Style End */
-
-/* Yellow gap between business setup in dubai and services offered in dubai */
-.gap {
-  background-color: #fee556c2;
-  width: 100%;
-  height: 100px;
-}
-/* Yellow gap between business setup in dubai and services offered in dubai */
-
-
-/* Media query min-width: 950px*/
-@media screen and (min-width: 950px){
-/* How to start company in dubai */
-.heading{
-  margin: auto;
-}
-.col {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
-
-}
-
-.card {
-  width: 15%;
-  height: 200px;
-  color: #fee456;
-  background-color: black;
-  text-align: center;
-  border-radius: 20%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: -6px 8px 1px 2px #8f7100;
-}
-
-.card>img {
-  display: block;
-  margin: auto;
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
-}
-
-
-
-/* Why choose us */
-.chooseus {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  background-color: #181818;
-}
-
-.chooseus>h1 {
-  text-align: center;
-  color: white;
-}
-
-.chooselist {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 5%;
-}
-
-.chooseitems {
-  width: 15%;
-  height: 200px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  border: 6px outset white;
-  border-radius: 20%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  margin-bottom: 40px;
-}
-
-.chooseitems:hover {
-  transform: scale(1.13);
-}
-
-.chooseitems>img {
-  align-self: center;
-  width: 80px;
-  height: 80px;
-}
-
-/* Service offered for dubai business setup */
-.service {
-  width: 100%;
-  margin: auto;
-  padding: 3%;
-  background-color: black;
-  height: fit-content;
-}
-
-.header {
-  width: 100%;
-  text-align: center;
-}
-
-.header>h1 {
-  color: #fee456;
-}
-
-.main {
-  width: 95%;
-  margin: auto;
-}
-
-.service-main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 60px;
-}
-
-.main-head>h2 {
-  text-align: center;
-  color: #fee456;
-  margin-bottom: 8%;
-
-}
-
-.bannerPost {
-  width: 25%;
-  color: black;
-  background-color: #fff;
-  box-shadow: 10px 14px 0px 0px #fee456;
-}
-
-.bannerPost>h3 {
-  text-align: center;
+  list-style-type: disc;
   font-size: 1.3rem;
 }
 
-.bannerPost>p {
-  font-size: 1.2rem;
-  padding: 20px 20px 5px 20px;
-  text-align: justify;
+#phone{
+  width:25px;
+  height: 25px;
 }
-
-/* Floating Form */
-.benefit {
-  width: 100%;
-  padding: 5px;
-  /* background-color: white; */
-}
-
-#main {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-#main .column1 {
-  width: 70%;
-  padding: 10px;
-  margin: 0px;
-}
-
-#main .column2 {
-  width: 30%;
-  padding: 10px;
-  margin: 0px;
-  margin-top: 13px;
-  position: relative;
-}
-
-.item {
-  background-color: white;
-  ;
-  font-size: 0.8rem;
-  width: 70%;
-  border: 1px solid black;
-  box-shadow: 10px 10px 0px 0px black;
-  ;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.item:nth-child(1) {
-  float: left;
-  text-align: left;
-}
-
-.item:nth-child(3) {
-  float: left;
-  text-align: left;
-}
-
-.item:nth-child(2) {
-  float: right;
-  text-align: right;
-}
-
-.item:nth-child(4) {
-  float: right;
-  text-align: right;
-}
-
-.formcontent {
-  background-color: #181818;
-  position: sticky;
-  top: 10rem;
-}
-
-.struct {
-  padding: 5% 10%;
-}
-
-.tp {
-  top: -30px
-}
-
-.tp>p {
-  width: 15rem;
-}
-
-.struct>input {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#tel {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid #fee456;
-  font-weight: 600;
-  font-size: 15px;
-  border-bottom: 1px solid grey;
-}
-
 
 /* Testimonial */
 .testimonial {
@@ -782,34 +190,626 @@ footer .info {
 }
 
 
+/* @media screen and (max-width: 600px) {} */
+.container-fluid{
+  width: 100%;
+  padding: 5px;
+  margin-left: auto;
+  position: relative;
+  top:0px;
+  right: 0px;
+  margin-right: auto;
+  background-color: black;
+  height: fit-content;
+}
+.container-fluid::after{
+  position: absolute;
+  content: "";
+  width: 454px;
+  height: var(--full-width);
+  background: url(img.jpg) 0 no-repeat;
+  background-size: cover;
+  right: 0px;
+  top: 0px;
+}
+
+.container-fluid .row{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+}
+.container-fluid .row>*{
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.container-fluid .container{
+  padding: 10px;
+}
+#head h3{
+  font-size:2.5rem;
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 2px;
+  color: #fee765;
+}
+#head h3:nth-child(1){
+color: #fee765;
+}
+#head h6{
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #fee765;
+}
+#head p{
+  margin-bottom:10px;
+  margin-top: 8px;
+  font-size: 2vw;
+  font-weight: 500;
+}
+.name>h3{
+  margin-top: 5px;
+}
+.email>h3 , .number>h3{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#name ,#email ,  #number {
+  padding:13px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  border:2px solid #fee765;
+  border-bottom: 1px solid grey;
+   }
+.form{
+  background-color: #fff;
+  border-radius: 15px;
+  border-top: 10px solid #034d82;
+  height: max-content;
+}
+.headline h2{
+  font-size: 20px;
+  position: relative;
+  top: -8px;
+  margin: 0px;
+  padding:4px 3px;
+  text-align: center;
+}
+.formcontent{
+  margin: 0px;
+  padding: 15px 0px;
+ 
+}
+.headline{
+  background-color: #034d82;
+  color: #fff;
+}
+button {
+  padding: 13px;
+  font-size: larger;
+  color: white;
+  border:none;
+  border-radius: 10px;
+  background-color:#ff6600;
+  width: 100%;
+
+}
+.container2 {
+  margin-top: 20px;
+  width: 100%;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container_two {
+position: sticky;
+z-index: 1;
+top: 20px;
+padding: 50px;
+}
+.rib-txt {
+background-color: black;
+z-index: -1;
+}
+.container3{
+margin-top: 20px;
+width: 100%;
+background: #fee756;
+height: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.container3 h1{
+font-size: 50px;
+text-align: center;
+font-weight: bold;
+}
+.rib-txt {
+  position: absolute;
+  top: -24px;
+  width: 100%;
+}
+
+.rib-txt>p::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #8f7100;
+  position: absolute;
+  z-index: -1;
+  top: 1px;
+  right: -20px;
+}
+
+.rib-txt>p {
+  background: #fed437;
+  box-shadow: 4px 6px 25px rgb(0 0 0 / 8%);
+  border-radius: 0 0 50px 50px;
+  width: 45vw;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-weight: 700;
+  position: relative;
+}
+
+.rib-txt>p::after {
+  left: -20px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #8f7100;
+  position: absolute;
+  z-index: -1;
+  top: 1px;
+}
+
+.form-container {
+  width: 95%;
+  padding: 0px;
+  margin: auto;
+  margin-top: 35px;
+  background-color: black;
+}
+.formi {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.formi>div {
+  width: 30%
+}
+
+.formi>div:nth-child(4) {
+  width: 20vw;
+}
+
+/* Footer Style Start */
+.container-fluid2 {
+width: 100%;
+padding: 0px 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.bg-blue {
+background: #18233f;
+color: #fff;
+}
+
+.container1 {
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+footer .row {
+display: flex;
+flex-wrap: wrap;
+}
+
+footer .col-md-6 {
+flex: 0 0 50%;
+max-width: 50%;
+}
+
+footer .info {
+margin: 30px 0;
+}
+
+.info p {
+font-size: 1em;
+margin: 20px
+}
+
+.info .address {
+text-align: right;
+}
+/* Footer Style End */
+
+/* Yellow gap between business setup in dubai and services offered in dubai */
+.gap {
+background-color: #fee556c2;
+width: 100%;
+height: 100px;
+}
+/* Yellow gap between business setup in dubai and services offered in dubai */
+
+
+/* Media query min-width: 950px*/
+@media screen and (min-width: 950px){
+/* How to start company in dubai */
+.heading{
+margin: auto;
+}
+.col {
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
+
+}
+
+.card {
+width: 15%;
+height: 200px;
+color: #fee456;
+background-color: black;
+text-align: center;
+border-radius: 20%;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+margin-bottom: 40px;
+box-shadow: -6px 8px 1px 2px #8f7100;
+}
+
+.card>img {
+display: block;
+margin: auto;
+margin-top: 10px;
+width: 80px;
+height: 80px;
 }
 
 
-  /* Medium devices (landscape tablets, 768px and up) */
+
+/* Why choose us */
+.chooseus {
+width: 100%;
+margin: auto;
+padding: 10px;
+background-color: #181818;
+}
+
+.chooseus>h1 {
+text-align: center;
+color: white;
+}
+
+.chooselist {
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+column-gap: 5%;
+}
+
+.chooseitems {
+width: 15%;
+height: 200px;
+color: black;
+background-color: white;
+text-align: center;
+border: 6px outset white;
+border-radius: 20%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+margin-bottom: 40px;
+}
+
+.chooseitems:hover {
+transform: scale(1.13);
+}
+
+.chooseitems>img {
+align-self: center;
+width: 80px;
+height: 80px;
+}
+
+/* Service offered for dubai business setup */
+.service {
+width: 100%;
+margin: auto;
+padding: 3%;
+background-color: black;
+height: fit-content;
+}
+
+.header {
+width: 100%;
+text-align: center;
+}
+
+.header>h1 {
+color: #fee456;
+}
+
+.main {
+width: 95%;
+margin: auto;
+}
+
+.service-main {
+width: 100%;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 60px;
+}
+
+.main-head>h2 {
+text-align: center;
+color: #fee456;
+margin-bottom: 8%;
+
+}
+
+.bannerPost {
+width: 25%;
+color: black;
+background-color: #fff;
+box-shadow: 10px 14px 0px 0px #fee456;
+}
+
+.bannerPost>h3 {
+text-align: center;
+font-size: 1.3rem;
+}
+
+.bannerPost>p {
+font-size: 1.2rem;
+padding: 20px 20px 5px 20px;
+text-align: justify;
+}
+
+/* Floating Form */
+.benefit {
+width: 100%;
+padding: 5px;
+/* background-color: white; */
+}
+
+#main {
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+
+#main .column1 {
+width: 70%;
+padding: 10px;
+margin: 0px;
+}
+
+#main .column2 {
+width: 30%;
+padding: 10px;
+margin: 0px;
+margin-top: 13px;
+position: relative;
+}
+
+.item {
+background-color: white;
+;
+font-size: 0.8rem;
+width: 70%;
+border: 1px solid black;
+box-shadow: 10px 10px 0px 0px black;
+;
+margin-bottom: 20px;
+padding: 20px;
+}
+
+.item:nth-child(1) {
+float: left;
+text-align: left;
+}
+
+.item:nth-child(3) {
+float: left;
+text-align: left;
+}
+
+.item:nth-child(2) {
+float: right;
+text-align: right;
+}
+
+.item:nth-child(4) {
+float: right;
+text-align: right;
+}
+
+.formcontent {
+background-color: #181818;
+position: sticky;
+top: 45px;
+}
+
+.struct {
+padding: 5% 10%;
+}
+
+.tp {
+top: -30px
+}
+
+.tp>p {
+width: 15rem;
+}
+
+.struct>input {
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+#tel {
+width: 100%;
+padding: 13px;
+border: 1px solid #fee456;
+font-weight: 600;
+font-size: 15px;
+border-bottom: 1px solid grey;
+}
+
+
+/* Testimonial */
+.testimonial {
+width: 90%;
+margin: auto;
+height: fit-content;
+
+}
+
+.care {
+width: 100%;
+display: flex;
+justify-content: center;
+position: relative;
+margin-top: 20px;
+gap: 2%
+}
+
+.carousel {
+position: relative;
+width: 50%
+}
+
+.carousel-inner {
+display: flex;
+overflow-x: scroll;
+border-radius: 4px;
+scroll-behavior: smooth;
+scroll-snap-type: x mandatory;
+}
+
+.carousel-inner::-webkit-scrollbar {
+display: none;
+}
+
+.testitem {
+width: 60%;
+border-radius: 10px;
+border: 1px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #fff;
+margin-bottom: 15px;
+box-shadow: 0px 10px 0px 0px black;
+position: relative;
+flex: 0 0 100%;
+width: 100%;
+}
+
+.content {
+display: flex;
+flex-direction: row;
+padding: 10px;
+}
+
+.content>img {
+border-radius: 50%;
+width: 60%;
+margin: auto;
+margin-right: 20px;
+margin-left: 20px;
+display: block;
+}
+
+.carousel__slide {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+.carousel__next,
+.carousel__prev {
+text-decoration: none;
+color: black;
+border-radius: 4px;
+width: 40px;
+height: 40px;
+text-align: center;
+font-size: 25px;
+font-weight: 800;
+color: #fff;
+background-color: orangered;
+}
+
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
- 
-    #header .column1{
-    flex: 0 0 auto;
-        width:50%
-    }
-    #header .column2{
-    flex: 0 0 auto;
-      width:45%;
-     
-  
-        padding: 10px;
-       
-    }
-    .form{
-        width: 320px;
-        margin: auto;
-    }
+
+  #header .column1{
+  flex: 0 0 auto;
+      width:50%
   }
+  #header .column2{
+  flex: 0 0 auto;
+    width:45%;
+   
+
+      padding: 10px;
+     
+  }
+  .form{
+      width: 320px;
+      margin: auto;
+  }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {} */
@@ -819,93 +819,93 @@ footer .info {
 
 /* Media query max-width: 600px*/
 @media screen and (max-width: 600px){
-  /* how to setup company in dubai */
+/* how to setup company in dubai */
 .heading{
-  margin: auto;
+margin: auto;
 }
 .col {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 
 }
 
 .card {
-  width: 50%;
-  height: 200px;
-  color: #fee456;
-  background-color: black;
-  text-align: center;
-  border-radius: 20%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: -6px 8px 1px 2px #8f7100;
+width: 50%;
+height: 200px;
+color: #fee456;
+background-color: black;
+text-align: center;
+border-radius: 20%;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+margin-bottom: 40px;
+box-shadow: -6px 8px 1px 2px #8f7100;
 }
 
 .card>img {
-  display: block;
-  margin: auto;
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
+display: block;
+margin: auto;
+margin-top: 10px;
+width: 80px;
+height: 80px;
 }
 
 /* why choose us */
 .chooseus {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  background-color: #181818;
+width: 100%;
+margin: auto;
+padding: 10px;
+background-color: #181818;
 }
 
 .chooseus>h1 {
-  text-align: center;
-  color: white;
+text-align: center;
+color: white;
 }
 
 .chooselist {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;    
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;    
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 }
 
 .chooseitems {
-  width: 50%;
-  height: 200px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  border: 6px outset white;
-  border-radius: 20%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+width: 50%;
+height: 200px;
+color: black;
+background-color: white;
+text-align: center;
+border: 6px outset white;
+border-radius: 20%;
+display: flex;
+justify-content: center;
+flex-direction: column;
 
-  padding: 20px;
-  transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  margin-bottom: 40px;
+padding: 20px;
+transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+margin-bottom: 40px;
 }
 
 .chooseitems:hover {
-  transform: scale(1.13);
+transform: scale(1.13);
 }
 
 .chooseitems>img {
-  align-self: center;
-  width: 80px;
-  height: 80px;
+align-self: center;
+width: 80px;
+height: 80px;
 }
 }
 
@@ -920,291 +920,291 @@ footer .info {
 
 /* Media query max-width: 950px*/
 @media screen and (max-width: 950px){
-  /* Testimonial */
-  .carousel {
-    position: relative;
-    width: 95%;
+/* Testimonial */
+.carousel {
+  position: relative;
+  width: 95%;
 }
 
-  /* Main image */
+/* Main image */
 .container-fluid::after{
-  display: none;
-  position: absolute;
-  content: "";
-  width: 454px;
-  height: var(--full-width);
-  background: url(img.jpg) 0 no-repeat;
-  background-size: cover;
-  right: 0px;
-  top: 0px;
+display: none;
+position: absolute;
+content: "";
+width: 454px;
+height: var(--full-width);
+background: url(img.jpg) 0 no-repeat;
+background-size: cover;
+right: 0px;
+top: 0px;
 }
 #demo {
-  text-align: center;
-  font-size: 5rem;
-  height: 150px;
+text-align: center;
+font-size: 5rem;
+height: 150px;
 }
 #head h6{
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  width: 100%;
-  color: #fee765;
+text-align: center;
+font-size: 1.5rem;
+font-weight: 400;
+margin-bottom: 5px;
+margin-top: 10px;
+width: 100%;
+color: #fee765;
 }
 .ullist {
-  text-align: center;
-  color: #fee765;
+text-align: center;
+color: #fee765;
 }
 
 .ullist>li {
-  list-style-type: none;
-  text-align: center;
-  font-size: 1.3rem;
+list-style-type: none;
+text-align: center;
+font-size: 1.3rem;
 }
 
-  /* How to open a company in dubai */
+/* How to open a company in dubai */
 .heading{
-  margin: auto;
+margin: auto;
 }
 .col {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 
 }
 
 .card {
-  width: 25%;
-  height: 200px;
-  color: #fee456;
-  background-color: black;
-  text-align: center;
-  border-radius: 20%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: -6px 8px 1px 2px #8f7100;
+width: 25%;
+height: 200px;
+color: #fee456;
+background-color: black;
+text-align: center;
+border-radius: 20%;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+margin-bottom: 40px;
+box-shadow: -6px 8px 1px 2px #8f7100;
 }
 
 .card>img {
-  display: block;
-  margin: auto;
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
+display: block;
+margin: auto;
+margin-top: 10px;
+width: 80px;
+height: 80px;
 }
 
 /* Why choose us */
 .chooseus {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  background-color: #181818;
+width: 100%;
+margin: auto;
+padding: 10px;
+background-color: #181818;
 }
 
 .chooseus>h1 {
-  text-align: center;
-  color: white;
+text-align: center;
+color: white;
 }
 
 .chooselist {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;    
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;    
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 }
 
 .chooseitems {
-  width: 25%;
-  height: 200px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  border: 6px outset white;
-  border-radius: 20%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+width: 25%;
+height: 200px;
+color: black;
+background-color: white;
+text-align: center;
+border: 6px outset white;
+border-radius: 20%;
+display: flex;
+justify-content: center;
+flex-direction: column;
 
-  padding: 20px;
-  transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  margin-bottom: 40px;
+padding: 20px;
+transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+margin-bottom: 40px;
 }
 
 .chooseitems:hover {
-  transform: scale(1.13);
+transform: scale(1.13);
 }
 
 .chooseitems>img {
-  align-self: center;
-  width: 80px;
-  height: 80px;
+align-self: center;
+width: 80px;
+height: 80px;
 }
 
 
 /* Service offered for dubai business setup */
 .service {
-  width: 100%;
-  margin: auto;
-  padding: 3%;
-  background-color: black;
-  height: fit-content;
+width: 100%;
+margin: auto;
+padding: 3%;
+background-color: black;
+height: fit-content;
 }
 
 .header {
-  width: 100%;
-  text-align: center;
+width: 100%;
+text-align: center;
 }
 
 .header>h1 {
-  color: #fee456;
+color: #fee456;
 }
 
 .main {
-  width: 95%;
-  margin: auto;
+width: 95%;
+margin: auto;
 }
 
 .service-main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 60px;
+width: 100%;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 60px;
 }
 
 .main-head>h2 {
-  text-align: center;
-  color: #fee456;
-  margin-bottom: 8%;
+text-align: center;
+color: #fee456;
+margin-bottom: 8%;
 
 }
 
 .bannerPost {
-  width: 70%;
-  margin: 2rem;
-  color: black;
-  background-color: #fff;
-  box-shadow: 10px 14px 0px 0px #fee456;
+width: 70%;
+margin: 2rem;
+color: black;
+background-color: #fff;
+box-shadow: 10px 14px 0px 0px #fee456;
 }
 
 .bannerPost>h3 {
-  text-align: center;
-  font-size: 1.3rem;
+text-align: center;
+font-size: 1.3rem;
 }
 
 .bannerPost>p {
-  font-size: 1.2rem;
-  padding: 20px 20px 5px 20px;
-  text-align: justify;
+font-size: 1.2rem;
+padding: 20px 20px 5px 20px;
+text-align: justify;
 }
 
 
 /* Floating Form */
 .benefit {
-  width: 100%;
-  padding: 5px;
-  /* background-color: white; */
+width: 100%;
+padding: 5px;
+/* background-color: white; */
 }
 
 #main {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+width: 100%;
+display: flex;
+flex-direction: row;
 }
 
 #main .column1 {
-  /* width: 70%; */
-  padding: 10px;
-  margin: 2rem;
+/* width: 70%; */
+padding: 10px;
+margin: 2rem;
 }
 
 #main .column2 {
-  width: 30%;
-  padding: 10px;
-  margin: 0px;
-  margin-top: 13px;
-  position: relative;
+width: 30%;
+padding: 10px;
+margin: 0px;
+margin-top: 13px;
+position: relative;
 }
 
 .item {
-  background-color: white;
-  ;
-  font-size: 0.8rem;
-  width: 70%;
-  border: 1px solid black;
-  box-shadow: 10px 10px 0px 0px black;
-  ;
-  margin-bottom: 20px;
-  padding: 20px;
+background-color: white;
+;
+font-size: 0.8rem;
+width: 70%;
+border: 1px solid black;
+box-shadow: 10px 10px 0px 0px black;
+;
+margin-bottom: 20px;
+padding: 20px;
 }
 
 .item:nth-child(1) {
-  float: left;
-  text-align: center;
-  width: 100%;
+float: left;
+text-align: center;
+width: 100%;
 }
 
 .item:nth-child(3) {
-  float: left;
-  text-align: center;
-  width: 100%;
+float: left;
+text-align: center;
+width: 100%;
 }
 
 .item:nth-child(2) {
-  float: right;
-  text-align: center;
-  width: 100%;
+float: right;
+text-align: center;
+width: 100%;
 }
 
 .item:nth-child(4) {
-  float: right;
-  text-align: center;
-  width: 100%;
+float: right;
+text-align: center;
+width: 100%;
 }
 
 .formcontent {
-  display: none;
-  background-color: #181818;
-  position: sticky;
-  top: 10rem;
+display: none;
+background-color: #181818;
+position: sticky;
+top: 45px;
 }
 
 .struct {
-  padding: 5% 10%;
+padding: 5% 10%;
 }
 
 .tp {
-  top: -30px
+top: -30px
 }
 
 .tp>p {
-  width: 15rem;
+width: 15rem;
 }
 
 .struct>input {
-  margin-bottom: 20px;
-  margin-top: 20px;
+margin-bottom: 20px;
+margin-top: 20px;
 }
 
 #tel {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid #fee456;
-  font-weight: 600;
-  font-size: 15px;
-  border-bottom: 1px solid grey;
+width: 100%;
+padding: 13px;
+border: 1px solid #fee456;
+font-weight: 600;
+font-size: 15px;
+border-bottom: 1px solid grey;
 }
 
 
@@ -1214,299 +1214,299 @@ footer .info {
 
 /* Media query max-width: 700px*/
 @media screen and (max-width: 700px){
-  /* how to setup company in dubai */
+/* how to setup company in dubai */
 .heading{
-  margin: auto;
+margin: auto;
 }
 .col {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 
 }
 
 .card {
-  width: 45%;
-  height: 200px;
-  color: #fee456;
-  background-color: black;
-  text-align: center;
-  border-radius: 20%;
-  border-radius: 15%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: -6px 8px 1px 2px #8f7100;
+width: 45%;
+height: 200px;
+color: #fee456;
+background-color: black;
+text-align: center;
+border-radius: 20%;
+border-radius: 15%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+margin-bottom: 40px;
+box-shadow: -6px 8px 1px 2px #8f7100;
 }
 
 .card>img {
-  display: block;
-  margin: auto;
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
+display: block;
+margin: auto;
+margin-top: 10px;
+width: 80px;
+height: 80px;
 }
 
 /* Why choose us */
 .chooseus {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  background-color: #181818;
+width: 100%;
+margin: auto;
+padding: 10px;
+background-color: #181818;
 }
 
 .chooseus>h1 {
-  text-align: center;
-  color: white;
+text-align: center;
+color: white;
 }
 
 .chooselist {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;    
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;    
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 }
 
 .chooseitems {
-  width: 45%;
-  height: 200px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  border: 6px outset white;
-  border-radius: 20%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+width: 45%;
+height: 200px;
+color: black;
+background-color: white;
+text-align: center;
+border: 6px outset white;
+border-radius: 20%;
+display: flex;
+justify-content: center;
+flex-direction: column;
 
-  padding: 20px;
-  transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  margin-bottom: 40px;
+padding: 20px;
+transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+margin-bottom: 40px;
 }
 
 .chooseitems:hover {
-  transform: scale(1.13);
+transform: scale(1.13);
 }
 
 .chooseitems>img {
-  align-self: center;
-  width: 80px;
-  height: 80px;
+align-self: center;
+width: 80px;
+height: 80px;
 }
 }
 
 
 /* Media query max-width: 600px*/
 @media screen and (max-width: 600px){
-  .container{
-    margin-bottom: 26px;
-  }
-  /* Top navbar */
-  .topnav {
-    background-color: white;
-    margin: 0px;
-    padding: 0%;
-  }
+.container{
+  margin-bottom: 26px;
+}
+/* Top navbar */
+.topnav {
+  background-color: white;
+  margin: 0px;
+  padding: 0%;
+}
 
-  .topnav .navchip {
-    margin-bottom: 20px;
-    width: auto;
-  }
+.topnav .navchip {
+  margin-bottom: 20px;
+  width: auto;
+}
 
-  .topnav a {
-    padding: 2px 16px;
-    height: inherit;
-  }
+.topnav a {
+  padding: 2px 16px;
+  height: inherit;
+}
 
-  .topnav img {
-    /* width: 100%; */
-    height: 100%;
-    margin: 0px;
-  }
-
-
+.topnav img {
+  /* width: 100%; */
+  height: 100%;
+  margin: 0px;
+}
 
 
-  .rib-txt>p::before {
-    content: none !important;
+
+
+.rib-txt>p::before {
+  content: none !important;
 }
 
 .rib-txt>p {
-    background: #fed437;
-    box-shadow: 4px 6px 25px rgb(0 0 0 / 8%);
-    border-radius: 0px;
-    width: 45vw;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-weight: 700;
-    position: relative;
+  background: #fed437;
+  box-shadow: 4px 6px 25px rgb(0 0 0 / 8%);
+  border-radius: 0px;
+  width: 45vw;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-weight: 700;
+  position: relative;
 }
 
 .rib-txt>p::after {
-    content: none !important;
+  content: none !important;
 }
 
 
 
-  /* Sticky form top */
-  .container2 {
-    margin-top: 10px;
-    width: 100%;
-    background-color: black;
-    height: 100px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+/* Sticky form top */
+.container2 {
+  margin-top: 10px;
+  width: 100%;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .container_two {
-  position: sticky;
-  z-index: 1;
-  top: 20px;
-  padding: 0rem;
+position: sticky;
+z-index: 1;
+top: 20px;
+padding: 0rem;
 }
 .rib-txt {
+background-color: black;
+z-index: -1;
+}
+.form-container {
+  width: 100%;
+  padding: 0px;
+  margin: auto;
+  margin-top: 6rem;
   background-color: black;
-  z-index: -1;
 }
-  .form-container {
-    width: 100%;
-    padding: 0px;
-    margin: auto;
-    margin-top: 6rem;
-    background-color: black;
+.formi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  padding-bottom: 1rem;
 }
-  .formi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 5px;
-    padding-bottom: 1rem;
-}
-  .formi>div {
-    width: 90%;
+.formi>div {
+  width: 90%;
 }
 
 .form_styl { 
-  display: flex; 
-  gap: 10px; 
-  justify-content: center;
+display: flex; 
+gap: 10px; 
+justify-content: center;
 }
 
 .form_styl_one {
-  width: 50%;
+width: 50%;
 }
 .form_styl_two {
-  width: 50% ;
+width: 50% ;
 }
 
 .formi>div:nth-child(4) {
-  width: 270vw;
-  margin-top: 2px;
+width: 270vw;
+margin-top: 2px;
 }
 .column1{
-  margin-top: 4rem;
+margin-top: 4rem;
 }
-  /* how to setup company in dubai */
+/* how to setup company in dubai */
 .heading{
-  margin: auto;
+margin: auto;
 }
 .col {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 
 }
 
 .card {
-  width: 50%;
-  height: 200px;
-  color: #fee456;
-  background-color: black;
-  text-align: center;
-  border-radius: 20%;
-  border-radius: 15%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: -6px 8px 1px 2px #8f7100;
+width: 50%;
+height: 200px;
+color: #fee456;
+background-color: black;
+text-align: center;
+border-radius: 20%;
+border-radius: 15%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+margin-bottom: 30px;
+box-shadow: -6px 8px 1px 2px #8f7100;
 }
 
 .card>img {
-  display: block;
-  margin: auto;
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
+display: block;
+margin: auto;
+margin-top: 10px;
+width: 80px;
+height: 80px;
 }
 
 /* why choose us */
 .chooseus {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  background-color: #181818;
+width: 100%;
+margin: auto;
+padding: 10px;
+background-color: #181818;
 }
 
 .chooseus>h1 {
-  text-align: center;
-  color: white;
+text-align: center;
+color: white;
 }
 
 .chooselist {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;    
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+width: 95%;
+margin: auto;
+display: flex;
+flex-direction: row;    
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 5%;
 }
 
 .chooseitems {
-  width: 50%;
-  height: 200px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  border: 6px outset white;
-  border-radius: 20%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+width: 50%;
+height: 200px;
+color: black;
+background-color: white;
+text-align: center;
+border: 6px outset white;
+border-radius: 20%;
+display: flex;
+justify-content: center;
+flex-direction: column;
 
-  padding: 20px;
-  transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  margin-bottom: 40px;
+padding: 20px;
+transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+margin-bottom: 40px;
 }
 
 .chooseitems:hover {
-  transform: scale(1.13);
+transform: scale(1.13);
 }
 
 .chooseitems>img {
-  align-self: center;
-  width: 80px;
-  height: 80px;
+align-self: center;
+width: 80px;
+height: 80px;
 }
 }
 
